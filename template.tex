@@ -11,9 +11,10 @@
 \usepackage{amssymb}
 \usepackage{capt-of}
 \usepackage{hyperref}
+\usepackage{caption}
+
 \usepackage[margin=1.5in]{geometry}
 \usepackage{setspace}
-\usepackage{caption}
 \onehalfspacing
 
 \usepackage{fancyhdr}
@@ -21,7 +22,7 @@
 \fancyhead{}
 \fancyfoot{}
 \fancyhead[LE,RO]{\leftmark}
-\fancyhead[RE,LO]{Fred Feuerstein}
+\fancyhead[RE,LO]{Fred Flintstone}
 \fancyfoot[C]{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -47,7 +48,7 @@
         \vspace{8.0cm}
 
         \large
-        \textbf{Author}: Fred Feuerstein\\
+        \textbf{Author}: Fred Flintstone\\
         \large
         \textbf{Supervisor}: Prof. Dr. Wolfgang Ketter
 
@@ -71,7 +72,6 @@
 \listoftables
 \clearpage
 
-
 \pagenumbering{arabic}
 
 \section{Section One}
@@ -92,11 +92,12 @@ Id & Col 1 & Col 2 & Col 3 & Col 4 & Col 5\\
 \hline
 \hline
 \end{longtable}
-\subsection{Subsection Two}
+\subsection{Referencing Table}
 See Table \ref{table:table-1} for details.
 
 \clearpage
 \section{Section Two}
+\subsection{Sample Figure}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{./figures/hevner.png}
