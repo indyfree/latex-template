@@ -1,0 +1,119 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[margin=1.5in]{geometry}
+\usepackage{setspace}
+\usepackage{caption}
+\onehalfspacing
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[LE,RO]{\leftmark}
+\fancyhead[RE,LO]{Fred Feuerstein}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\usepackage[backend=biber, style=apa]{biblatex}
+\addbibresource{./references.bib}
+
+\usepackage[numbib,notlof,notlot,nottoc]{tocbibind}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+
+        \Large
+        \textbf{Very Important Title}
+
+        \vspace{1.5cm}
+        Subtitle
+
+        \vspace{8.0cm}
+
+        \large
+        \textbf{Author}: Fred Feuerstein\\
+        \large
+        \textbf{Supervisor}: Prof. Dr. Wolfgang Ketter
+
+        \vspace{1cm}
+        \large
+        Department of Information Systems for Sustainable Society\\
+        Faculty of Management, Economics and Social Sciences\\
+        University of Cologne\\
+
+        \vspace{1cm}
+        October, 2018
+
+    \end{center}
+\end{titlepage}
+
+\pagenumbering{Roman}
+\tableofcontents
+\clearpage
+\listoffigures
+\clearpage
+\listoftables
+\clearpage
+
+
+\pagenumbering{arabic}
+
+\section{Section One}
+\subsection{Subsection One}
+\begin{longtable}{l|ccccc}
+\caption{Sample Table}
+\label{table:table-1}
+\\
+\hline
+\hline
+Id & Col 1 & Col 2 & Col 3 & Col 4 & Col 5\\
+\hline
+1 & Col 1 & Col 2 & Col 3 & Col 4 & Col 5\\
+2 & Col 1 & Col 2 & Col 3 & Col 4 & Col 5\\
+3 & Col 1 & Col 2 & Col 3 & Col 4 & Col 5\\
+4 & Col 1 & Col 2 & Col 3 & Col 4 & Col 5\\
+5 & Col 1 & Col 2 & Col 3 & Col 4 & Col 5\\
+\hline
+\hline
+\end{longtable}
+\subsection{Subsection Two}
+See Table \ref{table:table-1} for details.
+
+\clearpage
+\section{Section Two}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.9\linewidth]{./figures/hevner.png}
+\caption{Design Science}
+\label{figure:hevner}
+\end{figure}
+See Figure \ref{figure:hevner} for details.
+\subsection{Citing}
+
+\begin{enumerate}
+\item \parencite{hevner04_desig_scien_infor_system_resear}
+\item \parencite{hevner04_desig_scien_infor_system_resear}
+\item \textcite{hevner04_desig_scien_infor_system_resear}
+\end{enumerate}
+
+
+
+\clearpage
+\printbibliography
+\end{document}
